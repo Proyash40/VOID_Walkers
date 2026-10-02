@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Void Walkers — CTF Team</title>
+  <meta name="description" content="Void Walkers is a competitive Capture The Flag team. Meet the crew and track our events." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar" id="navbar" data-open="false">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-mark" aria-hidden="true">V</span>
+        Void Walkers
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a class="navbar__link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="navbar__link" href="hierarchy.html">Hierarchy</a></li>
+        <li><a class="navbar__link" href="contact.html">Contact</a></li>
+        <li><a class="navbar__link" href="help.html">Help</a></li>
+        <li><a class="navbar__link" href="database.html">Database</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="navbar__toggle-bars"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <span class="hero__eyebrow">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Actively competing
+          </span>
+          <h1>Void Walkers</h1>
+          <p class="hero__subtitle">
+            A competitive Capture The Flag team working across web, pwn, reversing,
+            crypto and forensics — building exploits, breaking assumptions, and
+            climbing scoreboards together.
+          </p>
+          <div class="hero__actions">
+            <a href="database.html" class="btn btn--primary">View event history</a>
+            <a href="contact.html" class="btn btn--secondary">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="members">
+      <div class="container">
+        <div class="section-head">
+          <h2>The crew</h2>
+          <p>
+            Ordered by the community hierarchy — leadership first, then down through
+            management, department heads, and team members. See the full structure on
+            the <a href="hierarchy.html" style="color: var(--color-text-primary); border-bottom: 1px solid var(--color-border-strong);">Hierarchy</a> page.
+          </p>
+        </div>
+        <div id="membersError"></div>
+        <div class="members-grid" id="membersGrid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Void Walkers.</p>
+      <p>Built for competition. Powered by coffee and stack traces.</p>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/roles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

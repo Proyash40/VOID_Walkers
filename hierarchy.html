@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hierarchy — Void Walkers</title>
+  <meta name="description" content="How Void Walkers is organized — leadership, management, department heads, moderators, team leads and members — and what access each level holds." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar" id="navbar" data-open="false">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-mark" aria-hidden="true">V</span>
+        Void Walkers
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a class="navbar__link" href="index.html">Home</a></li>
+        <li><a class="navbar__link" href="hierarchy.html" aria-current="page">Hierarchy</a></li>
+        <li><a class="navbar__link" href="contact.html">Contact</a></li>
+        <li><a class="navbar__link" href="help.html">Help</a></li>
+        <li><a class="navbar__link" href="database.html">Database</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="navbar__toggle-bars"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ===== Intro ===== -->
+    <section style="padding-bottom: var(--space-6);">
+      <div class="container container--prose">
+        <div class="section-head" style="margin-bottom: 0;">
+          <h2>Community management hierarchy</h2>
+          <p>
+            How Void Walkers is organized, from founding leadership down to new members —
+            and the access and responsibility that comes with each level.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Org chart ===== -->
+    <section style="padding-block: var(--space-5) var(--space-8);">
+      <div class="container">
+        <div class="org-chart">
+
+          <div class="org-node org-node--solo" data-tier="founder">
+            <div class="org-node__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8L7 11L12 5L17 11L21 8L19.5 18H4.5L3 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Founder / Executive</h3>
+              <p>Vision, strategy &amp; overall leadership</p>
+            </div>
+          </div>
+          <div class="org-connector" aria-hidden="true"></div>
+
+          <div class="org-node org-node--solo" data-tier="coordinator">
+            <div class="org-node__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M3.5 19C3.5 15.7 6 13.5 9 13.5C12 13.5 14.5 15.7 14.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="17" cy="9" r="2.3" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M15.5 13.6C18 13.6 20 15.4 20.3 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Community Coordinators</h3>
+              <p>Community growth, outreach, engagement, cross-team coordination &amp; experience</p>
+            </div>
+          </div>
+          <div class="org-connector" aria-hidden="true"></div>
+
+          <div class="org-tier-panel" data-tier="management">
+            <div class="org-tier-panel__head">
+              <h3>Management (Core Team)</h3>
+              <p>Strategic management, operations &amp; governance</p>
+            </div>
+            <div class="org-tier-grid">
+              <div class="org-tile" data-tier="management">
+                <h4>Operations Manager</h4>
+                <p>Oversees daily operations, systems &amp; execution</p>
+              </div>
+              <div class="org-tile" data-tier="management">
+                <h4>Finance &amp; Treasurer</h4>
+                <p>Handles budgeting, funds, resources &amp; financial planning</p>
+              </div>
+              <div class="org-tile" data-tier="management">
+                <h4>HR &amp; Talent Manager</h4>
+                <p>Recruitment, training, well-being &amp; internal culture</p>
+              </div>
+              <div class="org-tile" data-tier="management">
+                <h4>Strategy &amp; Planning Manager</h4>
+                <p>Planning, roadmaps, initiatives &amp; long-term strategy</p>
+              </div>
+              <div class="org-tile" data-tier="management">
+                <h4>Legal &amp; Compliance Manager</h4>
+                <p>Policies, compliance, risk management &amp; governance</p>
+              </div>
+            </div>
+          </div>
+          <div class="org-connector" aria-hidden="true"></div>
+
+          <div class="org-tier-panel" data-tier="department">
+            <div class="org-tier-panel__head">
+              <h3>Department Heads (Domain Leads)</h3>
+              <p>Lead their respective domains &amp; manage teams</p>
+            </div>
+            <div class="org-tier-grid">
+              <div class="org-tile" data-tier="department">
+                <h4>Cybersecurity &amp; Ethical Hacking</h4>
+                <ul>
+                  <li>CTF</li><li>Bug Bounty</li><li>Pentesting</li><li>Red Teaming</li>
+                </ul>
+              </div>
+              <div class="org-tile" data-tier="department">
+                <h4>Cybercrime Investigation &amp; Forensics</h4>
+                <ul>
+                  <li>Digital Forensics</li><li>Incident Response</li><li>OSINT</li><li>Threat Intel</li>
+                </ul>
+              </div>
+              <div class="org-tile" data-tier="department">
+                <h4>Competitive Coding</h4>
+                <ul>
+                  <li>Algorithms</li><li>Data Structures</li><li>CP Contests</li><li>Problem Solving</li>
+                </ul>
+              </div>
+              <div class="org-tile" data-tier="department">
+                <h4>AI &amp; Data Science</h4>
+                <ul>
+                  <li>Machine Learning</li><li>Deep Learning</li><li>Computer Vision</li><li>NLP</li>
+                </ul>
+              </div>
+              <div class="org-tile" data-tier="department">
+                <h4>Hardware &amp; Robotics</h4>
+                <ul>
+                  <li>Robotics</li><li>Embedded Systems</li><li>IoT</li><li>Drones</li>
+                </ul>
+              </div>
+              <div class="org-tile" data-tier="department">
+                <h4>Hackathons &amp; Product Building</h4>
+                <ul>
+                  <li>Hackathons</li><li>Startup Builders</li><li>Open Source</li><li>MVP Sprints</li>
+                </ul>
+              </div>
+              <div class="org-tile" data-tier="department">
+                <h4>Design &amp; Media</h4>
+                <ul>
+                  <li>UI/UX Design</li><li>Graphic Design</li><li>Video &amp; Motion</li><li>Branding</li>
+                </ul>
+              </div>
+              <div class="org-tile" data-tier="department">
+                <h4>Research &amp; Innovation</h4>
+                <ul>
+                  <li>Research Projects</li><li>Technical Writing</li><li>Paper Publications</li><li>Innovation Challenges</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="org-connector" aria-hidden="true"></div>
+
+          <div class="org-node org-node--wide" data-tier="moderator">
+            <div class="org-node__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Moderators (Mods)</h3>
+              <p>Enforce rules, maintain discipline &amp; ensure smooth community operations</p>
+            </div>
+          </div>
+          <div class="org-connector" aria-hidden="true"></div>
+
+          <div class="org-node org-node--wide" data-tier="leads">
+            <div class="org-node__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M3.5 19C3.5 15.7 6 13.5 9 13.5C12 13.5 14.5 15.7 14.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="17" cy="9" r="2.3" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M15.5 13.6C18 13.6 20 15.4 20.3 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Team Leads</h3>
+              <p>Lead specific teams / projects within their department</p>
+            </div>
+          </div>
+          <div class="org-connector" aria-hidden="true"></div>
+
+          <div class="org-node org-node--wide" data-tier="members">
+            <div class="org-node__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M5 20C5 16.1 8.1 13.5 12 13.5C15.9 13.5 19 16.1 19 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Team Members (Non-Core)</h3>
+              <p>Execute tasks, contribute &amp; grow within the community</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Role progression ladder ===== -->
+    <section style="padding-block: 0 var(--space-8);">
+      <div class="container">
+        <div class="section-head">
+          <h2>Role progression ladder</h2>
+          <p>How team members (non-core) move up, based on tenure, engagement and contribution.</p>
+        </div>
+
+        <div class="ladder">
+          <div class="ladder-step">
+            <span class="ladder-step__index">1</span>
+            <h4>Initiator</h4>
+            <p>Just joined, learning &amp; exploring</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-step__index">2</span>
+            <h4>Explorer</h4>
+            <p>Exploring actively, participating</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-step__index">3</span>
+            <h4>Challenger</h4>
+            <p>Taking challenges, contributing</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-step__index">4</span>
+            <h4>Operator</h4>
+            <p>Reliable &amp; consistent, high engagement</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-step__index">5</span>
+            <h4>Specialist</h4>
+            <p>Skilled &amp; proficient, mentors others</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-step__index">6</span>
+            <h4>Elite</h4>
+            <p>Exceptional impact, trusted member</p>
+          </div>
+          <div class="ladder-step">
+            <span class="ladder-step__index">7</span>
+            <h4>Vanguard</h4>
+            <p>Leadership impact, top contributor</p>
+          </div>
+          <div class="ladder-core">
+            <h4>Core Member</h4>
+            <p>Trusted core — eligible for leadership roles</p>
+          </div>
+        </div>
+
+        <p class="text-tertiary">Note: time in server, engagement, contribution, skills &amp; behavior are all evaluated for level-ups.</p>
+      </div>
+    </section>
+
+    <!-- ===== Reference: access, flow, key, sponsors, notes ===== -->
+    <section style="padding-block: 0 var(--space-8);">
+      <div class="container">
+        <div class="reference-grid">
+
+          <div class="reference-col">
+            <div class="panel">
+              <h3>Access levels guide</h3>
+              <ul class="guide-list">
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="founder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8L7 11L12 5L17 11L21 8L19.5 18H4.5L3 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span><h4>Founder / Executive</h4><p>Full access</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="coordinator" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 19C2.5 15.7 5 13.5 8 13.5C11 13.5 13.5 15.7 13.5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16.5" cy="9" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg>
+                  </span>
+                  <span><h4>Community Coordinators</h4><p>Staff channels access</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="management" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 3V5.2M12 18.8V21M21 12H18.8M5.2 12H3M18.1 5.9L16.5 7.5M7.5 16.5L5.9 18.1M18.1 18.1L16.5 16.5M7.5 7.5L5.9 5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </span>
+                  <span><h4>Management (Core Team)</h4><p>Full access</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="department" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><path d="M15 9L13 13L9 15L11 11L15 9Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span><h4>Department Heads</h4><p>Dept &amp; staff channels</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="moderator" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span><h4>Moderators</h4><p>Mod channels</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="leads" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 3V21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6 4H16L13.5 7.5L16 11H6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span><h4>Team Leads</h4><p>Their teams &amp; dept channels</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="members" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M5 20C5 16.1 8.1 13.5 12 13.5C15.9 13.5 19 16.1 19 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </span>
+                  <span><h4>Members (All Levels)</h4><p>Public &amp; dept channels</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="external" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="10.5" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5V7.5C8 5.6 9.6 4 11.5 4H12.5C14.4 4 16 5.6 16 7.5V10.5" stroke="currentColor" stroke-width="1.6"/></svg>
+                  </span>
+                  <span><h4>Sponsors / Partners</h4><p>Partner channels (limited)</p></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Channel access guide</h3>
+              <ul class="guide-list guide-list--compact">
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="department" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span><h4>Full access</h4><p>Read &amp; write</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="coordinator" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="10.5" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5V7.5C8 5.6 9.6 4 11.5 4H12.5C14.4 4 16 5.6 16 7.5V10.5" stroke="currentColor" stroke-width="1.6"/></svg>
+                  </span>
+                  <span><h4>Limited access</h4><p>Read only</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="management" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4L14.3 9.1L20 9.8L15.8 13.5L17 19L12 16.2L7 19L8.2 13.5L4 9.8L9.7 9.1L12 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span><h4>Competitive access</h4><p>Specific channels</p></span>
+                </li>
+                <li class="guide-item">
+                  <span class="guide-item__icon" data-tier="moderator" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  </span>
+                  <span><h4>No access</h4><p>Restricted</p></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Feedback &amp; communication flow</h3>
+              <div class="flow-list">
+                <span class="flow-item">Members / Teams</span>
+                <span class="flow-arrow" aria-hidden="true">↕</span>
+                <span class="flow-item">Team Leads / Mods</span>
+                <span class="flow-arrow" aria-hidden="true">↕</span>
+                <span class="flow-item">Dept Heads</span>
+                <span class="flow-arrow" aria-hidden="true">↕</span>
+                <span class="flow-item">Management</span>
+                <span class="flow-arrow" aria-hidden="true">↕</span>
+                <span class="flow-item">Community Coordinators</span>
+                <span class="flow-arrow" aria-hidden="true">↕</span>
+                <span class="flow-item">Founder / Executive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reference-col">
+            <div class="panel">
+              <h3>Key</h3>
+              <ul class="legend-list">
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-founder);"></span>Founder / Executive</li>
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-coordinator);"></span>Community Coordinators</li>
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-management);"></span>Management (Core Team)</li>
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-department);"></span>Department Heads</li>
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-moderator);"></span>Moderators</li>
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-leads);"></span>Team Leads</li>
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-members);"></span>Members (All Levels)</li>
+                <li class="legend-item"><span class="legend-dot" style="--tier: var(--tier-external);"></span>External (Sponsors/Partners)</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Sponsors &amp; partners <span class="text-tertiary">(external stakeholders)</span></h3>
+              <div class="stakeholder-block">
+                <h4>Private (staff visible)</h4>
+                <ul>
+                  <li>Partner discussions</li>
+                  <li>Deliverables tracker</li>
+                  <li>Sponsorship updates</li>
+                  <li>Private meetings</li>
+                  <li>Reports &amp; analytics</li>
+                </ul>
+              </div>
+              <div class="stakeholder-block">
+                <h4>Public (members visible)</h4>
+                <ul>
+                  <li>Our sponsors</li>
+                  <li>Partner events</li>
+                  <li>Internships &amp; jobs</li>
+                  <li>Discounts &amp; benefits</li>
+                  <li>Opportunities</li>
+                  <li>Thank-you wall</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Important notes</h3>
+              <ul class="notes-list">
+                <li class="notes-item">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Department channels are managed by respective Team Leads.
+                </li>
+                <li class="notes-item">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Event-specific channels are created &amp; archived as needed.
+                </li>
+                <li class="notes-item">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Security &amp; privacy are maintained at every level.
+                </li>
+                <li class="notes-item">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  This hierarchy scales with the growth of the community.
+                </li>
+                <li class="notes-item">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Promotions are based on merit &amp; contribution.
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Leadership role eligibility</h3>
+              <p style="font-size: var(--fs-sm); margin-bottom: var(--space-3);">Eligible to apply for Team Leads, Moderators, Department Heads, Management roles, or Community Coordinators:</p>
+              <div class="member-card__tags">
+                <span class="tag">Elite</span>
+                <span class="tag">Vanguard</span>
+                <span class="tag">Core Member</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Core principles ===== -->
+    <section style="padding-block: 0 var(--space-9);">
+      <div class="container container--prose" style="text-align: center; margin-inline: auto; max-width: var(--max-width);">
+        <h2 style="margin-bottom: var(--space-6);">Core principles</h2>
+        <div class="principles-grid">
+          <div class="principle">
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20C12 20 4 15.5 4 9.8C4 7.1 6.1 5 8.7 5C10.1 5 11.3 5.7 12 6.8C12.7 5.7 13.9 5 15.3 5C17.9 5 20 7.1 20 9.8C20 15.5 12 20 12 20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h4>Community first</h4>
+            <p>People before position</p>
+          </div>
+          <div class="principle">
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 12C2 12 5.5 6 12 6C18.5 6 22 12 22 12C22 12 18.5 18 12 18C5.5 18 2 12 2 12Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <h4>Transparency</h4>
+            <p>Clear processes &amp; decisions</p>
+          </div>
+          <div class="principle">
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4L14.3 9.1L20 9.8L15.8 13.5L17 19L12 16.2L7 19L8.2 13.5L4 9.8L9.7 9.1L12 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </span>
+            <h4>Meritocracy</h4>
+            <p>Recognition through impact</p>
+          </div>
+          <div class="principle">
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 16L9.5 10.5L13 14L20 6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 6.5H20V12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h4>Growth</h4>
+            <p>Learn, contribute, lead</p>
+          </div>
+          <div class="principle">
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h4>Integrity</h4>
+            <p>Respect &amp; accountability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Void Walkers.</p>
+      <p>Built for competition. Powered by coffee and stack traces.</p>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/roles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

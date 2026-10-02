@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Database — Void Walkers</title>
+  <meta name="description" content="Track every CTF event the Void Walkers team has competed in." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="navbar" id="navbar" data-open="false">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-mark" aria-hidden="true">V</span>
+        Void Walkers
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a class="navbar__link" href="index.html">Home</a></li>
+        <li><a class="navbar__link" href="hierarchy.html">Hierarchy</a></li>
+        <li><a class="navbar__link" href="contact.html">Contact</a></li>
+        <li><a class="navbar__link" href="help.html">Help</a></li>
+        <li><a class="navbar__link" href="database.html" aria-current="page">Database</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="navbar__toggle-bars"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Event database</h2>
+          <p>Every CTF the team has registered for, is currently running, or has completed.</p>
+        </div>
+
+        <div id="eventsError"></div>
+        <div id="eventsEmpty"></div>
+
+        <div class="table-wrap" id="eventsTableWrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Event</th>
+                <th scope="col">Format</th>
+                <th scope="col">Start date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Rank</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody id="eventsTableBody" aria-live="polite"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Void Walkers.</p>
+      <p>Built for competition. Powered by coffee and stack traces.</p>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
