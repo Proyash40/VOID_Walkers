@@ -1,0 +1,7 @@
+{
+  "_readme": "HALL OF FAME. One object per past event. poster = main image (portrait works best) under assets/img/hall-of-fame/. gallery = extra photos. team = names. reviews = approved reviews ONLY (visitors' submissions arrive by email — copy the good ones here: {\"name\", \"rating\" 1-5, \"text\", \"date\"}). The two entries below are SAMPLES: replace them.",
+  "items": [
+    { "id": "sample-hackathon", "title": "Sample: Inter-college Hackathon", "date": "2026-03-14", "category": "Hackathon", "result": "1st place", "poster": "assets/img/hall-of-fame/sample-hackathon.jpg", "summary": "Replace this with a one-line summary of the event.", "details": "Write the full story here: what we built, who was on the team, what we learned.", "team": ["Saber", "Godspeed"], "gallery": [], "reviews": [ { "name": "Sample reviewer", "rating": 5, "text": "Sample review — replace with a real one.", "date": "2026-03-20" } ] },
+    { "id": "sample-roborace", "title": "Sample: RoboRace Finals", "date": "2026-02-02", "category": "RoboRace", "result": "Finalists", "poster": "", "summary": "Replace this with a one-line summary of the event.", "details": "Write the full story here.", "team": [], "gallery": [], "reviews": [] }
+  ]
+}

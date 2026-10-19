@@ -1,0 +1,8 @@
+{
+  "_readme": "UPCOMING EVENTS. type: 'organising' (we host it) or 'participating' (we compete in it). date / endDate: YYYY-MM-DD. poster: optional image path under assets/img/events/. register: optional link. Events whose end date has passed are hidden automatically — move the memorable ones to data/hall-of-fame.json. The three entries below are SAMPLES: replace them.",
+  "events": [
+    { "id": "sample-hack", "type": "organising", "title": "Sample: Void Hack (replace me)", "date": "2026-12-05", "endDate": "2026-12-06", "location": "Campus", "mode": "On-site", "description": "A 24-hour build sprint. Replace this text with the real event details.", "tags": ["Hackathon", "Open to all"], "poster": "", "register": "" },
+    { "id": "sample-robo", "type": "participating", "title": "Sample: Inter-college RoboWar (replace me)", "date": "2026-11-22", "endDate": "", "location": "Another city", "mode": "On-site", "description": "We are sending a combat robot. Replace with the real event.", "tags": ["RoboWar"], "poster": "", "register": "" },
+    { "id": "sample-ctf", "type": "participating", "title": "Sample: Online CTF (replace me)", "date": "2027-01-10", "endDate": "2027-01-11", "location": "Online", "mode": "Remote", "description": "Jeopardy-style CTF. Replace with the real event.", "tags": ["CTF", "Cybersecurity"], "poster": "", "register": "" }
+  ]
+}

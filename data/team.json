@@ -1,0 +1,29 @@
+{
+  "_readme": "HIERARCHY PEOPLE. Edit 'name' and 'image' for any position. image = path under assets/img/team/ (e.g. 'assets/img/team/saber.jpg'). Leave image empty to show an initial instead. Leave name empty to show 'Position open'. Add/remove people in founders, coordinators, moderators, teamLeads by copying a line. 'home.show' chooses which groups appear on the home page.",
+  "home": { "show": ["founders", "management", "departmentHeads"] },
+
+  "founders": [
+    { "name": "Saber", "title": "Founder", "image": "assets/img/team/saber.jpg" },
+    { "name": "Godspeed", "title": "Founder", "image": "assets/img/team/godspeed.jpg" }
+  ],
+  "coordinators": [],
+  "management": [
+    { "key": "operations", "position": "Operations Manager", "name": "", "image": "" },
+    { "key": "finance", "position": "Finance & Treasurer", "name": "", "image": "" },
+    { "key": "hr", "position": "HR & Talent Manager", "name": "", "image": "" },
+    { "key": "strategy", "position": "Strategy & Planning Manager", "name": "", "image": "" },
+    { "key": "legal", "position": "Legal & Compliance Manager", "name": "", "image": "" }
+  ],
+  "departmentHeads": [
+    { "key": "cybersecurity", "position": "Cybersecurity & Ethical Hacking", "name": "", "image": "" },
+    { "key": "forensics", "position": "Cybercrime Investigation & Forensics", "name": "", "image": "" },
+    { "key": "coding", "position": "Competitive Coding", "name": "", "image": "" },
+    { "key": "ai", "position": "AI & Data Science", "name": "", "image": "" },
+    { "key": "hardware", "position": "Hardware & Robotics", "name": "", "image": "" },
+    { "key": "hackathons", "position": "Hackathons & Product Building", "name": "", "image": "" },
+    { "key": "design", "position": "Design & Media", "name": "", "image": "" },
+    { "key": "research", "position": "Research & Innovation", "name": "", "image": "" }
+  ],
+  "moderators": [],
+  "teamLeads": []
+}

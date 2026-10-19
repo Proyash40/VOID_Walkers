@@ -1,0 +1,12 @@
+{
+  "_readme": "MERCH STATUS. Set state to 'live' when the store opens (the under-construction view is replaced by the product grid). Module states: live | building | queued.",
+  "state": "under-construction",
+  "eta": "TBA",
+  "modules": [
+    { "id": "catalogue", "name": "Catalogue", "state": "building", "note": "Product schema, sizes, variants", "page": "product.html" },
+    { "id": "cart", "name": "Cart", "state": "queued", "note": "Persistent basket, promo codes", "page": "cart.html" },
+    { "id": "checkout", "name": "Checkout & payments", "state": "queued", "note": "UPI / cards, invoices", "page": "checkout.html" },
+    { "id": "accounts", "name": "Accounts", "state": "queued", "note": "Sign-in, addresses, saved details", "page": "account.html" },
+    { "id": "orders", "name": "Order tracking", "state": "queued", "note": "Status timeline, shipping updates", "page": "orders.html" }
+  ]
+}

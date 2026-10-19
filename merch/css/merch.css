@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Void Walkers — Merch (separate sub-system: /merch)
+   Storefront shell: under-construction status board, module map, drop slots.
+   Loads on top of ../css/*.css.
+   ========================================================================== */
+
+.merch-hero { padding-block: var(--space-9) var(--space-7); }
+.merch-hero h1 { font-size: clamp(3.6rem, 12vw, 8.5rem); margin: var(--space-3) 0 var(--space-5); }
+.merch-hero p { max-width: 54ch; font-size: var(--fs-md); }
+.sys-tag { display: inline-flex; align-items: center; gap: 10px; }
+.sys-tag::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--tier-management); box-shadow: 0 0 0 4px rgba(255, 194, 71, 0.15), 0 0 14px var(--tier-management); animation: blink 1.8s ease-in-out infinite; }
+.sys-tag[data-state="live"]::before { background: var(--success); box-shadow: 0 0 0 4px var(--success-soft), 0 0 14px var(--success); }
+
+/* Terminal */
+.terminal { margin-top: var(--space-7); max-width: 780px; border: 1px solid var(--line-2); border-radius: var(--radius-lg); background: rgba(2, 3, 8, 0.72); overflow: hidden; }
+.terminal__bar { display: flex; align-items: center; gap: 8px; padding: 12px var(--space-4); border-bottom: 1px solid var(--line); }
+.terminal__bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line-3); }
+.terminal__bar span { margin-left: auto; }
+.terminal__body { min-height: 236px; padding: var(--space-5); font-family: "Space Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.8rem; line-height: 1.85; color: var(--text-2); white-space: pre-wrap; }
+.terminal__body .ok { color: var(--success); }
+.terminal__body .wip { color: var(--tier-management); }
+.terminal__body .q { color: var(--text-3); }
+.terminal__body .hl { color: var(--text); }
+.terminal__cursor { display: inline-block; width: 8px; height: 1em; margin-left: 2px; vertical-align: -2px; background: var(--accent); animation: caret 1s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+
+/* Progress */
+.progress { display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-6); max-width: 780px; }
+.progress__bar { flex: 1; display: grid; grid-template-columns: repeat(24, 1fr); gap: 3px; }
+.progress__bar i { height: 10px; border-radius: 2px; background: var(--surface-3); }
+.progress__bar i.on { background: var(--accent); box-shadow: 0 0 10px var(--accent-soft); }
+.progress__bar i.pulse { background: var(--accent-mid); animation: blink 1.4s ease-in-out infinite; }
+
+/* Modules */
+.module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-3); }
+.module-card { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-5); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); transition: transform var(--dur) var(--ease), background-color var(--dur) var(--ease); }
+a.module-card:hover { transform: translateY(-5px); background: var(--surface-2); border-color: transparent; }
+.module-card h3 { font-size: var(--fs-md); }
+.module-card p { font-size: var(--fs-sm); }
+.state { display: inline-flex; align-items: center; gap: 8px; width: fit-content; font-size: 0.66rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+.state::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.state--live { color: var(--success); }
+.state--building { color: var(--tier-management); }
+.state--building::before { animation: blink 1.4s ease-in-out infinite; }
+.state--queued { color: var(--text-3); }
+
+/* Product slots */
+.slot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-3); }
+.slot-card { padding: var(--space-4); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.slot-card__img { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-md); background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.025) 0 8px, transparent 8px 16px), #07060d; display: flex; align-items: center; justify-content: center; }
+.slot-card__img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 40%, rgb(var(--accent-rgb) / 0.14) 50%, transparent 60%); transform: translateY(-100%); animation: scan 4.5s linear infinite; }
+@keyframes scan { to { transform: translateY(100%); } }
+.slot-card__img span { font-family: var(--font-display); font-weight: 800; font-size: 3rem; color: var(--line-3); }
+.slot-card__meta { display: flex; flex-direction: column; gap: 8px; margin-top: var(--space-4); }
+.redact { height: 10px; border-radius: 2px; background: var(--surface-3); }
+.redact--short { width: 45%; }
+.slot-card .label { margin-top: 2px; }
+
+.product-card { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-4); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.product-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-md); }
+.product-card h3 { font-size: var(--fs-md); }
+.product-card__price { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; color: var(--accent); }
+
+.waitlist { display: flex; flex-wrap: wrap; gap: var(--space-3); max-width: 560px; }
+.waitlist .form-control { flex: 1; min-width: 220px; }
+
+/* Stub (module offline) pages */
+.stub { max-width: 720px; }
+.stub h1 { font-size: clamp(3rem, 9vw, 6.5rem); margin: var(--space-3) 0 var(--space-5); }
+.stub ul { display: flex; flex-direction: column; gap: var(--space-2); margin: var(--space-5) 0 var(--space-6); }
+.stub li { position: relative; padding-left: var(--space-5); color: var(--text-2); }
+.stub li::before { content: "▢"; position: absolute; left: 0; color: var(--text-3); }
+.crumbs { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); font-size: var(--fs-xs); letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--text-3); }
+.crumbs a:hover { color: var(--accent); }
+
+.section-head[data-spaced] { margin-top: var(--space-8); margin-bottom: var(--space-4); }
+.waitlist .form-error { flex-basis: 100%; }

@@ -1,0 +1,24 @@
+{
+  "_readme": "Site-wide settings. Edit the values, keep the keys. Paths are relative to the site root.",
+  "name": "Void Walkers",
+  "email": "off.voidwalker@gmail.com",
+  "instagram": "https://www.instagram.com/official.voidwalkers",
+  "discord": { "name": "Void Walkers", "url": "" },
+  "logo": "assets/img/logo.png",
+  "forms": {
+    "_readme": "Contact, hiring, review and merch-waitlist forms POST here. If it fails, the visitor's email app opens as a fallback so nothing is lost.",
+    "endpoint": "https://formsubmit.co/ajax/off.voidwalker@gmail.com"
+  },
+  "domains": [
+    { "id": "hackathons", "title": "Hackathons & Product Building", "blurb": "48-hour sprints, MVPs, startups and open source." },
+    { "id": "robowar", "title": "RoboWar", "blurb": "Combat robots built to survive the arena." },
+    { "id": "roborace", "title": "RoboRace", "blurb": "Autonomous and line-following racers, tuned to the millisecond." },
+    { "id": "drones", "title": "Drones & Aerial Systems", "blurb": "Flight controllers, FPV, autonomy and payloads." },
+    { "id": "machines", "title": "Machines & Hardware", "blurb": "Embedded systems, IoT, PCBs, CAD and automation." },
+    { "id": "ai", "title": "AI & Data Science", "blurb": "Machine learning, vision, NLP and applied research." },
+    { "id": "security", "title": "Cybersecurity & Forensics", "blurb": "CTFs, bug bounty, pentesting, DFIR and OSINT." },
+    { "id": "coding", "title": "Competitive Coding", "blurb": "Algorithms, contests and problem solving." },
+    { "id": "design", "title": "Design & Media", "blurb": "UI/UX, branding, motion and video." },
+    { "id": "research", "title": "Research & Innovation", "blurb": "Papers, prototypes and technical writing." }
+  ]
+}

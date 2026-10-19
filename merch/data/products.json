@@ -1,0 +1,4 @@
+{
+  "_readme": "PRODUCTS. Empty for now. When ready: {\"id\",\"name\",\"price\" (number, INR),\"image\",\"tag\" (e.g. 'New'),\"sizes\":[\"S\",\"M\"],\"description\"}. Images under assets/img/merch/.",
+  "products": []
+}

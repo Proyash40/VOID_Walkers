@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#04050b" />
+  <title>Void Walkers — Tech Community</title>
+  <meta name="description" content="Void Walkers is a tech community across every domain of computer science and engineering: hackathons, RoboWar, RoboRace, drones, machines, AI and cybersecurity." />
+  <script>
+    /* Apply saved accent / effects / language before first paint (prevents a flash). */
+    try { var s = JSON.parse(localStorage.getItem('vw.settings') || '{}'), d = document.documentElement;
+      if (s.accent) d.dataset.accent = s.accent; if (s.fx) d.dataset.fx = s.fx; if (s.lang) d.lang = s.lang; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/settings.css" />
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content" data-i18n="nav.skip">Skip to content</a>
+
+  <header class="navbar" id="navbar" data-open="false">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Void Walkers">
+        <img class="navbar__logo-img" data-site-logo src="assets/img/logo-placeholder.svg" alt="" width="36" height="36" />
+        Void Walkers
+      </a>
+      <nav aria-label="Primary">
+        <ul class="navbar__links" id="navLinks">
+          <li><a class="navbar__link" href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+          <li><a class="navbar__link" href="hierarchy.html" data-i18n="nav.hierarchy">Hierarchy</a></li>
+          <li><a class="navbar__link" href="events.html" data-i18n="nav.events">Events</a></li>
+          <li><a class="navbar__link" href="hall-of-fame.html" data-i18n="nav.hof">Hall of Fame</a></li>
+          <li><a class="navbar__link" href="merch/index.html" data-i18n="nav.merch">Merch</a></li>
+          <li><a class="navbar__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a class="navbar__link navbar__link--cta" href="join.html" data-i18n="nav.join">Join us</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__actions">
+        <button class="icon-btn" type="button" id="soundToggle" data-state="paused" aria-pressed="false" data-i18n-aria-label="nav.sound" aria-label="Toggle background music">
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </button>
+        <button class="icon-btn" type="button" id="settingsOpen" aria-haspopup="dialog" data-i18n-aria-label="nav.settings" aria-label="Open settings">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 3V5.2M12 18.8V21M21 12H18.8M5.2 12H3M18.1 5.9L16.5 7.5M7.5 16.5L5.9 18.1M18.1 18.1L16.5 16.5M7.5 7.5L5.9 5.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn navbar__toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navLinks" data-i18n-aria-label="nav.menu" aria-label="Toggle navigation menu">
+          <span class="navbar__toggle-bars"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="main--hero">
+
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <canvas id="blackhole" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="container hero__meta label" aria-hidden="true">
+        <span class="hero__status" data-i18n="hero.status">Actively building &amp; competing</span>
+        <span data-i18n="hero.sector">Sector 00 — Void</span>
+      </div>
+      <div class="container hero__content">
+        <h1 id="heroTitle" class="hero__title" data-reveal><span>Void</span><span>Walkers</span></h1>
+        <div class="hero__side" data-reveal="2">
+          <p class="hero__subtitle" data-i18n="hero.subtitle">A tech community across every domain of computer science and engineering — hackathons, RoboWar, RoboRace, drones, machines, AI, cybersecurity and more. We build, compete and learn together.</p>
+          <div class="hero__actions">
+            <a href="join.html" class="btn btn--primary"><span data-i18n="hero.cta.join">Join us</span><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="events.html" class="btn btn--secondary"><span data-i18n="hero.cta.events">Upcoming events</span></a>
+          </div>
+          <p class="label" data-i18n="hero.hint" aria-hidden="true">Drag to tilt · Hold to feed the void</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="domains">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 data-i18n="home.domains.title">What we do</h2>
+          <p data-i18n="home.domains.desc">Every corner of computer science and engineering. If it can be built, broken or raced, we're probably into it.</p>
+        </div>
+        <ul class="domain-grid" id="domainGrid" data-reveal="1"></ul>
+      </div>
+    </section>
+
+    <section class="section--band section--flush-top">
+      <div class="container"><div class="next-event" id="nextEvent" data-reveal></div></div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <div class="section-head section-head--row" data-reveal>
+          <div><h2 data-i18n="team.title">Core team</h2><p data-i18n="team.desc">The people steering Void Walkers.</p></div>
+          <a class="text-link" href="hierarchy.html"><span data-i18n="team.link">Full hierarchy</span> &rarr;</a>
+        </div>
+        <div id="teamRoot" data-reveal="1"></div>
+      </div>
+    </section>
+
+    <section id="hall" class="section--flush-top">
+      <div class="container">
+        <div class="section-head section-head--row" data-reveal>
+          <div><h2 data-i18n="home.hof.title">Hall of Fame</h2><p data-i18n="home.hof.desc">Moments worth remembering from past events.</p></div>
+          <a class="text-link" href="hall-of-fame.html"><span data-i18n="home.hof.link">See all</span> &rarr;</a>
+        </div>
+        <div class="hof-preview" id="hofPreview" data-reveal="1"></div>
+      </div>
+    </section>
+
+    <section class="section--end">
+      <div class="container">
+        <div class="cta-banner" data-reveal>
+          <div><h2 data-i18n="home.join.title">Build with us</h2><p data-i18n="home.join.desc">Pick a domain, send your CV and tell us what you want to make.</p></div>
+          <a href="join.html" class="btn btn--primary"><span data-i18n="home.join.cta">Apply now</span><svg class="btn__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo"><img class="navbar__logo-img" data-site-logo src="assets/img/logo-placeholder.svg" alt="" width="36" height="36" />Void Walkers</a>
+          <p data-i18n="footer.blurb">A tech community building, competing and learning across every domain of CSE.</p>
+        </div>
+        <nav class="footer__col" aria-label="Footer"><h3 class="label" data-i18n="footer.explore">Explore</h3>
+          <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="hierarchy.html" data-i18n="nav.hierarchy">Hierarchy</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+          <li><a href="hall-of-fame.html" data-i18n="nav.hof">Hall of Fame</a></li>
+          <li><a href="merch/index.html" data-i18n="nav.merch">Merch</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="help.html" data-i18n="nav.help">Help</a></li>
+          </ul>
+        </nav>
+        <div class="footer__col"><h3 class="label" data-i18n="footer.connect">Connect</h3><div class="footer__social" data-social></div></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2026 Void Walkers</p><p>Built for competition. Powered by coffee and stack traces.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/icons.js" defer></script>
+  <script src="js/forms.js" defer></script>
+  <script src="js/settings.js" defer></script>
+  <script src="js/starfield.js" defer></script>
+  <script src="js/transitions.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/people.js" defer></script>
+  <script src="js/home.js" defer></script>
+  <script src="js/blackhole.js" defer></script>
+</body>
+</html>

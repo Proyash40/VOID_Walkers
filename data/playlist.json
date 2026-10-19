@@ -1,0 +1,9 @@
+{
+  "_readme": "BACKGROUND MUSIC. Songs play one after another in random order. Add a track by copying a line: put the file in assets/audio/ and list it here. Only use music you have the rights to. The four tracks below are generated ambient placeholders.",
+  "tracks": [
+    { "title": "Event Horizon", "artist": "Void Walkers (generated)", "src": "assets/audio/track-1.mp3" },
+    { "title": "Orbit Decay", "artist": "Void Walkers (generated)", "src": "assets/audio/track-2.mp3" },
+    { "title": "Signal Drift", "artist": "Void Walkers (generated)", "src": "assets/audio/track-3.mp3" },
+    { "title": "Photon Ring", "artist": "Void Walkers (generated)", "src": "assets/audio/track-4.mp3" }
+  ]
+}
