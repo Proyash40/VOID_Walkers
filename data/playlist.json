@@ -1,7 +1,7 @@
 {
   "_readme": "BACKGROUND MUSIC. Songs play one after another in random order. Add a track by copying a line: put the file in assets/audio/ and list it here. Only use music you have the rights to. The four tracks below are generated ambient placeholders.",
   "tracks": [
-    { "title": "Y Que Fue?", "artist": "Don Miguelo", "src": "assets/audio/Y_Que_Fue.mp3" },
+    { "title": "Y Que Fue?", "artist": "Don Miguelo", "src": "assets/audio/Y_Que_Fue.mp3" }
   
   ]
 }
